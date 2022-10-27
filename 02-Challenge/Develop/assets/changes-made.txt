@@ -1,0 +1,4 @@
+added display: flex, and flex-wrap: wrap to .header
+
+changed height to min-height in .search-engine-optimization, .online-reputation-management, .social-media-marketing
+
