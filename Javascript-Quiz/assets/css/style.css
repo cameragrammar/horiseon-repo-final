@@ -1,0 +1,154 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid rgb(0, 0, 0);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgba(224, 160, 81, 0.925);
+    overflow: hidden;
+}
+
+p {
+    color: rgb(121, 15, 15);
+    font-size: 1.3em;
+}
+
+button {
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+}
+
+h1, h2 {
+    color: rgb(155, 44, 44);
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.question{
+    padding: 20px;
+    font-size: 21px;
+    background:rgb(121, 15, 15);
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+
+.option{
+    width: 460px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background:rgba(224, 160, 81, 0.925);
+    color: black;
+    border-radius: 20px;
+}
+
+.option:hover{
+    background:rgba(224, 160, 81, 0.925);
+    color: #f6f6f6;
+}
+
+.next-btn{
+    border: none;
+    outline: none;
+    background:rgba(224, 160, 81, 0.925);
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+
+.next-btn:hover{
+    background: #08038C;
+    color: #f6f6f6
+}
+
+.result{
+    display: none;
+    height: 100px;
+    text-align: center;
+    font-size: 75px;
+}
+
+.option input:checked .option{
+    background: #08038C;
+    color: #000; 
+}
+
+
+.outer-container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.top-bar p {
+    float: right;
+}
+
+.inner-container {
+    background-color: bisque;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quiz-intro {
+    
+    margin-bottom: 50vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: blanchedalmond;
+}
+
+.quiz-intro p {
+    text-align: center;
+}
+
+.quiz-intro button {
+    display: block;
+    margin: 0 auto;
+}
+
+#quizContainer {
+    display: none;
+}
+
+.question-screen {
+    display: none;
+}
+
+.quiz-finish-screen {
+    display: none;
+}
+
+.highscore-screen {
+    display: none;
+}
+
+.highscore-screen ol {   
+    max-height: 200px;
+}
+
+.highscores-screen ol:hover {
+    overflow-y: scroll;
+}

@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>It's a Quiz!</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- main outer div-->
+        <div class="outer-container">
+
+            <!-- top bar -->
+            <div class="top-bar">
+                <button onclick="viewhigh()">View High Scores!</button>
+                <p id="timer"> Timer: 00:00 </p>
+            </div>
+
+        <!-- inner div -->    
+        <div class ="inner-container">
+
+        <!-- main header/quiz intro-->
+        <header class ="quiz-intro">
+            <h1> Welcome to the Thunderdome</h1>
+            <p>To get started with the quiz, click 'Start the Quiz!'</p>
+            <button onclick="start()">Start the Quiz!</button>
+        </header>
+
+        <!-- main quiz content -->
+        <main>
+            <div id="quizContainer" class="container">
+                <div class="title">Quiz Time</div>
+                <div id="question" class="question"></div>
+                    <label class="option"><input type="radio" name="option" value="1" /><span id="opt1"></span></label>
+                    <label class="option"><input type="radio" name="option" value="2" /><span id="opt2"></span></label>
+                    <label class="option"><input type="radio" name="option" value="3" /><span id="opt3"></span></label>
+                    <label class="option"><input type="radio" name="option" value="4" /><span id="opt4"></span></label>
+                    <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+            </div>
+            <div id="result" class="container result" >
+            </div>
+            <script src="assets/Javascript/questions.js"></script>
+            <script src="assets/Javascript/script.js"></script>
+
+            <section class="quiz-finish-screen">
+                <h2>Quiz Finished!</h2>
+                <p id="score">Your Score: 00</p>
+                <div>
+                    <label for="">Enter Initials:</label>
+                    <input type="text" id="initials">
+                    <button onclick="submit()">Submit</button>
+                </div>
+                </section>
+            <section class="highscore-screen">    
+                <h2>High Scores</h2>
+                <div id="scoreboard"> </div>
+                <button onclick="back()">Go Back</button>
+                <button onclick="clearscores()">Clear Highscores</button>
+            </section>
+
+        </main>
+    
+    </div>    
+
+    </div>    
+
+    </body>
+</html>

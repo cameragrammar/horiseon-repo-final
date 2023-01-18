@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  
+  <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <h1 class="navbar-item title"> Weather Dashboard: Search for the 5-Day Forecast of Any City</h1>
+      <h2></h2>
+        <div class="date-container">
+          <div class="time" id="time">
+            </div>
+       </div>
+    
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item" id="headerCity"></div>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- SEARCH BAR -->
+<div class="container">
+  <div class="columns">
+      <div class="column is-one-third">
+          <div class="box">
+              <h1 class="title">Search for a city</h1>
+              <input id="searchInput" class="input" type="text" placeholder="Enter a city name">
+              <button id="searchBtn" class="button is-info is-danger">Search</button>
+          </div>
+          <div id="history-container" class="box is-flex is-flex-direction-column">
+            <h1 class="title">Search History</h1>
+        </div>
+    </div>   
+    </div>
+    <div class="column">
+      <div id="output">
+        <div class="today" id="today"></div>
+      </div>
+      <div id="five-day-output" class="custom-container">
+      </div>
+  </div>
+</div>
+</div>   
+            
+
+ <!-- 5 Day Forecast Cards -->   
+<!-- <div class="container">
+  <div class="columns" id="weather-data">
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-1">5 Day Forecast</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="columns">
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">Day 1</p>
+                      </div>
+                    </div>
+                    <div class="content" id="day-1">
+                      <p class="subtitle is-6">Date</p>
+                      <p class="subtitle is-6">Temperature</p>
+                      <p class="subtitle is-6">Humidity</p>
+                      <p class="subtitle is-6">Wind Speed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">Day 2</p>
+                      </div>
+                    </div>
+                    <div class="content" id="day-2">
+                      <p class="subtitle is-6">Date</p>
+                      <p class="subtitle is-6">Temperature</p>
+                      <p class="subtitle is-6">Humidity</p>
+                      <p class="subtitle is-6">Wind Speed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">Day 3</p>
+                      </div>
+                    </div>
+                    <div class="content" id="day-3">
+                      <p class="subtitle is-6">Date</p>
+                      <p class="subtitle is-6">Temperature</p>
+                      <p class="subtitle is-6">Humidity</p>
+                      <p class="subtitle is-6">Wind Speed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">Day 4</p>
+                      </div>
+                    </div>
+                    <div class="content" id="day-4">
+                      <p class="subtitle is-6">Date</p>
+                      <p class="subtitle is-6">Temperature</p>
+                      <p class="subtitle is-6">Humidity</p>
+                      <p class="subtitle is-6">Wind Speed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5">Day 5</p>
+                      </div>
+                    </div>
+                    <div class="content" id="day-5">
+                      <p class="subtitle is-6">Date</p>
+                      <p class="subtitle is-6">Temperature</p>
+                      <p class="subtitle is-6">Humidity</p>
+                      <p class="subtitle is-6">Wind Speed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+</div> -->
+
+
+
+</div>
+  
+<script src="assets/script.js"></script>
+  
+</body>
+
+</html>
